@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>kindafunny</title>
+    <style>
+      #text {
+        width: 80%;
+        margin: auto; 
+        font-family: calibri;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="text">
+
+        Western beauty standards and the discrimination against black hair in schools and workplaces is a big issue. By treating black hair as an afterthought in video games, this issue extends to the world of video games as well.
+
+        Video games often limit representation to just afros or cornrows. Black hairstyles are just as diverse as any other ethnic group, and it is essential that the gaming industry recognizes this and makes an effort to include a broader range of styles in their games.
+
+        It makes sense since most video games are developed in Japan, diverse development teams and understanding of black textured hairstyles is not readily available. But, this shouldn’t be an excuse for limited representation. Better representation of people of color in video games starts with having better representation of people of color in the studios that make the games.
+
+        Building a library of information and consulting with individuals who have experience working with black hair is an excellent first step. But there is still a lot of work to be done. There needs to be more diverse voices and perspectives in the gaming industry to ensure that all groups are seen and represented.
+
+        <b>While the issue of black hairstyles in video games may seem like a small issue to some, it is part of a larger issue about representation, inclusion, and diversity in the gaming industry. By recognizing and addressing these issues can there be a more equitable gaming experience for everyone.</b>
+
+    </p>
+    <button id="button">Random Color Change of Text</button>
+    <p>This button changes the text to a random color.</p>
+    <script>
+      document.getElementById("button").addEventListener("click", function() {
+        var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+        document.getElementById("text").style.color = randomColor;
+      });
+    </script>
+  </body>
+</html>
