@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>hud</title>
+  </head>
+  <body>
+    <p id="p1">The Department of Housing and Urban Development sued Meta for violating the Fair Housing Act through their housing advertising algorithm that discriminated against Facebook users based on their race, religion, and national origin. This is the first time that the Department of Housing is challenging algorithmic bias under the Fair Housing Act.</p>
+    <p id="p2"><b>The lawsuit by the Department of Housing  against Meta for violating the discriminatory advertising algorithm highlights the need for government intervention and regulation in addressing algorithmic bias and discrimination by big companies. It highlights the importance of diversity and inclusion in algorithm development and testing with diverse and representative people. While the lawsuit is a positive step, it is only the beginning, and the government needs to continue to monitor algorithmic discrimination in other sectors.</b></p>
+    <p id="p3">This first step in addressing the issue of bias and discrimination in algorithms by big companies. It highlights the importance of government intervention and regulation when companies use algorithms. Without the Department of Housing, Meta could have continued their discriminatory advertising and these systemic inequalities in the housing market would have gone unnoticed. Similar to what we read last week in ‘Kinda Funny HW’, the issue highlights the need for companies to have more diversity and inclusion in their algorithmic development processes. They need to know that what they are building can amplify existing biases and discrimination. To prevent this, Meta and others need to hire a more diverse team in their algorithmic development and ensure their algorithms are tested with diverse and representative people. </p>
+    <p id="p4">While the Department of Housing’s lawsuit is a positive step, companies will still find ways to discriminate and get around government oversight. This means the government must stay on top of big companies using algorithms. These articles also only talked about specifically algorithmic discrimination in the housing market. There are still a lot of other forms of algorithmic bias and discrimination, like biased algorithms used in credit scoring and loan approval.</p>
+    
+    <p id="word-count"></p>
+    <script>
+      // Get the input string element
+      const p1 = document.getElementById('p1');
+      const p2 = document.getElementById('p2');
+      const p3 = document.getElementById('p3');
+      const p4 = document.getElementById('p4');
+
+      // Get the word count element
+      const wordCountElement = document.getElementById('word-count');
+
+      // Get the text content of the input string element
+      const p1Content = p1.textContent;
+      const p2Content = p2.textContent;
+      const p3Content = p3.textContent;
+      const p4Content = p4.textContent;
+
+      // Split the input string into an array of words
+      const words1 = p1Content.split(' ');
+      const words2 = p2Content.split(' ');
+      const words3 = p3Content.split(' ');
+      const words4 = p4Content.split(' ');
+
+      // Get the number of words in the array
+      const wordCount1 = words1.length;
+      const wordCount2 = words2.length;
+      const wordCount3 = words3.length;
+      const wordCount4 = words4.length;
+
+      // Set the text content of the word count element
+      wordCountElement.textContent = `Word count: ${wordCount1+wordCount2+wordCount3+wordCount4}`;
+    </script>
+  </body>
+</html>
